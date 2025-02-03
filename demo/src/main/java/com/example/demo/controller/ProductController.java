@@ -20,7 +20,7 @@ public class ProductController {
 
     @GetMapping("total_price/{productId}")
     public Double getTotalPrice(@PathVariable Integer productId){
-        System.out.println("getTotalPrice called");
+        System.out.println("getTotalPrice called instantly");
         return productService.calculateProductPrice(productId);
     }
 }
