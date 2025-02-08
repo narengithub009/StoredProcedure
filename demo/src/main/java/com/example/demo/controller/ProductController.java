@@ -29,11 +29,10 @@ public class ProductController {
             price = productService.calculateProductPrice(productId);
         }
 
-<<<<<<< HEAD
 
-=======
+
         System.out.println("calling product service to branch1");
->>>>>>> branch1
+
         return price;
     }
 }
