@@ -16,6 +16,10 @@ public class ProductService {
     }
 
     public  Double calculateProductPrice(int id){
-        return productRepository.getTotalPrice(id);
+        double price=0.0;
+        for (int i = 0; i <=50 ; i++) {
+          price = productRepository.getTotalPrice(id);
+        }
+        return price;
     }
 }
