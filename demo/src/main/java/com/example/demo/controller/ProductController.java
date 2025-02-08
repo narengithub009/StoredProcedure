@@ -15,12 +15,21 @@ public class ProductController {
     @PutMapping("/update/{productId}/{quantity}")
     public Product updateInventoryStock(@PathVariable Integer productId,
                                         @PathVariable Integer quantity) {
-        return productService.updateProductQuantity(productId, quantity);
+        Product product=new Product();
+        for (int i = 0; i <=1000 ; i++) {
+            product = productService.updateProductQuantity(productId, quantity);
+        }
+        return product;
     }
 
     @GetMapping("total_price/{productId}")
     public Double getTotalPrice(@PathVariable Integer productId){
-        System.out.println("getTotalPrice called instantly");
-        return productService.calculateProductPrice(productId);
+        double price=0.0;
+        for (int i = 0; i <=1000 ; i++) {
+            price = productService.calculateProductPrice(productId);
+        }
+
+
+        return price;
     }
 }
