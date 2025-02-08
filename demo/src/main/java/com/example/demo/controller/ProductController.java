@@ -29,7 +29,7 @@ public class ProductController {
             price = productService.calculateProductPrice(productId);
         }
 
-
+        System.out.println("calling");
         return price;
     }
 }
