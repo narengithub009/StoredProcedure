@@ -30,8 +30,7 @@ public class ProductController {
         }
 
 
-
-        System.out.println("calling product service to branch1");
+        System.out.println("calling product service to master");
 
         return price;
     }
